@@ -1,7 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This projects fetches movie data from Omdb API and I render them into my app. 
+Have included search functionality and clicking on a movie element takes you to the Imdb page for it.
 ## Available Scripts
 
 In the project directory, you can run:
