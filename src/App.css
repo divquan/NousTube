@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+.col-1 {
+    width: 8.33%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.col-2 {
+    width: 16.66%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col-3 {
+    width: 25%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.col-4 {
+    width: 33.33%;
 }
 
-.App-link {
-  color: #61dafb;
+.col-5 {
+    width: 41.66%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.row {
+    margin: auto;
+    width: 80%;
+    padding: 50px 50px 0px;
+    background-color: rgb(37, 32, 42);
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    /* margin-right: 25%; */
+    margin-left: 0;
+    border: black solid 1px;
+    border-radius: 9px;
+    padding: 3px;
+    padding-left: 9px;
+    width: 400px;
+    height: 40px;
+    transition: width .35s ease-in-out;
+}
+
+
+.container {
+    margin: 4% auto;
+}
+
+h1 {
+    padding: 10px;
+    margin-top: 0pt;
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(44, 20, 59));
+    border-radius: 9px;
+}
+
+.moviecard {
+    min-height: 366px;
+    min-width: 233px;
+    max-width: 234px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-right: 0.8vw;
+
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+svg {
+    color: #fff;
+    fill: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    padding: 0px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 50px;
+    margin-left: 6px;
+    border-radius: 6px;
+}
+
+button :active {
+    box-shadow: 0 8px 16px 0 rgb(17, 10, 26);
+    transform: scale(1.05);
+    cursor: pointer;
+    ;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
