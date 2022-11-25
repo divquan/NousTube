@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./app.css";
 import { MovieCard } from "./components/MovieCard";
+import "./app.css";
 
 //API_KEY = acc51d8
 const API_URL = "http://www.omdbapi.com/?apikey=acc51d8";
@@ -16,12 +16,12 @@ function App() {
   };
   useEffect(() => {
     searchMovies(searchTerm);
-  }, [searchTerm]);
+  }, []);
 
   return (
     <div className="header">
       <div className="container">
-        <h1>NousTube</h1>
+        <h1>Akua</h1>
         <div className="search-bar">
           <input
             placeholder="Search for  anything..."
