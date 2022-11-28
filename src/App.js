@@ -4,7 +4,7 @@ import "./app.css";
 import Alert from "./components/Alert";
 
 //API_KEY = acc51d8
-const API_URL = "http://www.omdbapi.com/?apikey=acc51d8";
+const API_URL = "https://www.omdbapi.com/?apikey=acc51d8";
 
 function App() {
   const [alert, setAlert] = useState({ show: false, msg: "" });
