@@ -1,0 +1,9 @@
+.alert {
+    margin: auto;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+}
+
+.alert h3 {
+    padding: 0.3rem 2rem 0.3rem 2rem;
+}
