@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/noustube/static/css/main.95e446f9.css",
-    "main.js": "/noustube/static/js/main.c9a1dd73.js",
+    "main.css": "/noustube/static/css/main.3c6d73ea.css",
+    "main.js": "/noustube/static/js/main.01211e9b.js",
     "index.html": "/noustube/index.html",
-    "main.95e446f9.css.map": "/noustube/static/css/main.95e446f9.css.map",
-    "main.c9a1dd73.js.map": "/noustube/static/js/main.c9a1dd73.js.map"
+    "main.3c6d73ea.css.map": "/noustube/static/css/main.3c6d73ea.css.map",
+    "main.01211e9b.js.map": "/noustube/static/js/main.01211e9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.95e446f9.css",
-    "static/js/main.c9a1dd73.js"
+    "static/css/main.3c6d73ea.css",
+    "static/js/main.01211e9b.js"
   ]
 }
