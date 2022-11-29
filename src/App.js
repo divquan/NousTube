@@ -20,14 +20,8 @@ function App() {
     setAlert({ show: false, msg: "" });
     setLoading(true);
     try {
-      const response = await fetch(`${API_URL}&s=${title}`, {
-        // ...
-        referrerPolicy: "unsafe_url",
-      });
-      //     //fetch('http://URL', {
-      //   // ...
-      //   referrerPolicy: "unsafe_url"
-      // });
+      const response = await fetch(`${API_URL}&s=${title}`);
+
       const data = await response.json();
       setLoading(false);
       if (data.Search === undefined) {
