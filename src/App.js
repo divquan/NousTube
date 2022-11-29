@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MovieCard } from "./components/MovieCard";
 import "./app.css";
 import Alert from "./components/Alert";
+import Navbar from "./components/Navbar";
 
 //API_KEY = acc51d8
 const API_URL = "https://www.omdbapi.com/?apikey=acc51d8";
@@ -21,7 +22,6 @@ function App() {
     setLoading(true);
     try {
       const response = await fetch(`${API_URL}&s=${title}`);
-
       const data = await response.json();
       setLoading(false);
       if (data.Search === undefined) {
@@ -31,25 +31,27 @@ function App() {
         });
       } else {
         setMovies(data.Search);
-        console.log(data.Search);
       }
     } catch (err) {
-      console.log(err);
       setAlert({ show: true, msg: ` ${err.message}` });
     }
   };
   useEffect(() => {
     searchMovies(searchTerm);
+    // eslint-disable-next-line
   }, []);
 
   return (
     <div className="header">
+      <div className="nav">
+        <Navbar />
+      </div>
       <div className="container">
         <h1>NousTube</h1>
 
         <form className="search-bar">
           <input
-            placeholder="Search for  anything..."
+            placeholder="Search for  movie by title..."
             value={searchTerm}
             required
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -64,7 +66,7 @@ function App() {
 
       <div className="row">
         {loading && (
-          <div class="lds-ellipsis">
+          <div className="lds-ellipsis">
             <div></div>
             <div></div>
             <div></div>

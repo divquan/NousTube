@@ -1,0 +1,29 @@
+.links {
+    display: flex;
+    margin: 0.2rem 0.8rem;
+    background-color: inherit;
+    border-radius: 14rem;
+    gap: 2vw;
+}
+
+.links a {
+    border-radius: 1rem;
+    display: flex;
+    background-color: inherit;
+}
+
+.logo h2 {
+    background-color: inherit;
+    margin: 0.2rem 0.8rem;
+
+    border-radius: 3rem;
+}
+
+.logo {
+    background-color: inherit;
+    border-radius: 3rem;
+}
+
+svg:hover {
+    filter: blur(3px);
+}
