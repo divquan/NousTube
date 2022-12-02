@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MovieCard } from "./components/MovieCard";
-import "./app.css";
+import "./App.css";
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 
